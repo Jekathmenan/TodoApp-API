@@ -12,5 +12,6 @@ namespace TodoApp_API.Models
         [Column(TypeName = "nvarchar(100)")]
         public DateOnly Deadline { get; set; }
         public int? TodoListId { get; set; }
+        public bool? IsCompleted { get; set; }
     }
 }

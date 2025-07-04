@@ -58,6 +58,7 @@ namespace TodoApp_API.Controllers
             }
             existingTodoItem.Name = todoItem.Name;
             existingTodoItem.Deadline = todoItem.Deadline;
+            existingTodoItem.IsCompleted = todoItem.IsCompleted;
             _context.SaveChanges();
             return NoContent();
         }
